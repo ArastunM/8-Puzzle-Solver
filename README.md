@@ -5,8 +5,8 @@ A goal could be any configuration on the grid, however; often it is the ordered 
 Aim of the project is to solve the 8-puzzle, using the [A*](https://en.wikipedia.org/wiki/A*_search_algorithm) heuristic search algorithm.
 Two heuristic functions with different performance were used in the implementation; Manhattan distances and Gaschnig's heuristic.
 
-The program solves an input puzzle configuration by providing a step-by-step pass to the input goal configuration. Note that the implementation 
-is purely based on command line interface.
+The program solves an input puzzle configuration by providing a step by step pass to the input goal configuration. Note that the program 
+provides command line interface based configuration selection and solution output.
 
 ## Prerequisites
 [Python version 3.8.5](https://www.python.org/downloads/release/python-385/) 
@@ -33,6 +33,10 @@ To access the program, run the *puzzle/puzzle_solver.py* script:
 The program will then request input start and goal configurations. In both cases, 
 input should be a list of comma seperated numbers, the program will then convert them to 
 2D 8-puzzle grids:
+
+<p align="left">
+<img src="images/start_state.png" height = 200></img>
+</p>
 
 In case of empty input, the program will run based on default parameters. These 
 can be changed on demand from the *sudoku_solver.py*.
